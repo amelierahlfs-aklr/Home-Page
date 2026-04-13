@@ -56,9 +56,9 @@ nav a:hover {
 }
 
 .hero-text h1 {
-	font-size: clamp(4rem, 10vw, 10rem);
+	font-size: clamp(4rem, 8vw, 10rem);
 	letter-spacing: 3px;
-	text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+	text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 /* SLIDER */
@@ -75,7 +75,7 @@ nav a:hover {
 	background-position: center;
 	opacity: 0;
 	transition: opacity 1s ease-in-out;
-	clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
 .slide.active {
@@ -90,22 +90,10 @@ section {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	border-bottom: 1px solid #ccc;
 	position: relative;
 }
 
-h2 {
-	font-size: 5em;
-	margin-bottom: 20px;
-	z-index: 1;
-	color: black;
-	position: absolute;
-	top: 50px;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
-/* BACKGROUND IMAGE SECTIONS */
+/* SECTION BACKGROUND */
 .hero-image {
 	position: absolute;
 	top: 0;
@@ -115,8 +103,19 @@ h2 {
 	background-image: url('jellyfish-5818601_1280.jpg');
 	background-size: cover;
 	background-position: center;
-	clip-path: polygon(100% 15%, 100% 0, 100% 100%, 0 100%);
 	z-index: 0;
+	opacity: 0.6;
+}
+
+/* HEADINGS */
+h2 {
+	font-size: 4rem;
+	z-index: 1;
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	color: black;
 }
 
 /* FOOTER */
